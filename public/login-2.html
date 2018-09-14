@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>login</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<body>
+    <div id="login-box">
+        <div class="left-box">
+            <h1>Login</h1>
+            <form name = "Login">
+            <input type="text" name="username" placeholder="Enter username">
+            
+            <input type="password" name="password" placeholder="Enter password">
+            <a href="main.html"><input type="submit" onclick = "check(this.form)" name="submit" value="Login"></a>
+            <a href='#'> forgot password?</a>
+            </form>
+            <script language="javascript">
+            function check(form)/*function to check userid & password*/
+            {
+            /*the following code checkes whether the entered userid and password are matching*/
+            if(form.username.value == "myuser" && form.password.value == "mypass")
+            {
+            window.open('main.html')/*opens the target page while Id & password matches*/
+            }
+            else
+            {
+            alert("Error: Wrong Password or Username")/*displays error message*/
+            }
+            }
+            </script>
+            </div>
+        
+            <div class="right-box">
+                <h1>Create New User</h1>
+                <input type="text" name="First Name" placeholder="First Name">
+                <input type="text" name="Last Name" placeholder="Last Name">
+                <input type="text" name="email" placeholder="Enter Email">
+                <input type="text" name="username" placeholder="username">
+                <input type="password" name="password" placeholder="Enter password">
+                <input type="date" name="date" placeholder="mm/dd/yyyy">
+                <input type="submit" name="submit" value="Sign Up">
+            </div>
+        </div>
+</body>
+</head>
+</html>
