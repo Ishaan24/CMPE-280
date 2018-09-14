@@ -1,0 +1,30 @@
+module.exports.index = function (req, res) {
+    var html = '<!DOCTYPE html>\n'
+        + '<html lang="en-US">\n'
+        + '<head>\n'
+        + '<title>FORETELL</title>\n'
+        + '<link rel="stylesheet" type="text/css" href="home-page.css">\n'
+        + '</head>\n'
+        + '<body>\n'
+        +   '<header>\n'
+        +        '<div class="row">\n'
+        +           '<div class="logo">\n'
+        +               '<img src=logo3.jpeg>\n'
+        +           '</div>\n'
+        +       '<ul class="main-nav">\n'
+        +           '<li><a href=""> Home </a></li>\n'
+        +           '<li><a href=""> About Us </a></li>\n'
+        +           '<li><a href=""> Contact Us </a></li>\n'
+        +           '<li><a href="login.html"> Log In </a></li>\n'
+        +           '<li><a href=""> News </a></li>\n'
+        +       '</ul>\n'
+        +       '</div>\n'
+        +       '<div class=hero>\n'
+        +           '<h1> We Foretell your Ecommerce orders for a better tomorrow</h1>\n'
+        +       '</div>\n'
+        +   '</header>\n'
+        + '</body>\n'
+        + '</html>\n';
+    res.send(html);
+};
+
